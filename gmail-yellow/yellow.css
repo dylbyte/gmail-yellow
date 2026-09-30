@@ -1,0 +1,23 @@
+:is([aria-label^="Important"], [data-tooltip^="Important"],
+    [aria-label="Starred"], [data-tooltip="Starred"]):not(a):not([role="navigation"] *) {
+  color: #f2d173 !important;
+}
+
+:is([aria-label^="Important"], [data-tooltip^="Important"],
+    [aria-label="Starred"], [data-tooltip="Starred"]):not(a):not([role="navigation"] *) :is(svg, path) {
+  fill: currentColor !important;
+}
+
+:is([role="switch"][aria-label^="Important"],
+    [role="button"][aria-label="Starred"],
+    [role="checkbox"][aria-checked="true"][aria-label="Starred"]):not([role="navigation"] *),
+:is([role="switch"][aria-label^="Important"],
+    [role="button"][aria-label="Starred"],
+    [role="checkbox"][aria-checked="true"][aria-label="Starred"]):not([role="navigation"] *) * {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(51%) saturate(362%)
+    hue-rotate(2deg) brightness(98%) contrast(96%) !important;
+}
+
+[data-pep-id="global-pep-gmail"] {
+  display: none !important;
+}

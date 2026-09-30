@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Yellow Important",
+  "version": "1.0",
+  "description": "Restore yellow Gmail importance markers.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "css": ["yellow.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
